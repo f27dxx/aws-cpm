@@ -297,11 +297,15 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
+    label: "List",
+    href: "/customers",
+  },
+  {
     label: "Inspiration",
     children: [
       {
         label: "Retirement",
-        subLabel: "See our retirement planner",
+        subLabel: "Our trusted retirement planner",
         href: "#",
       },
       {
