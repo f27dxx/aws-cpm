@@ -28,7 +28,10 @@ interface Props {
 
 const CustomTable: React.FC<Props> = ({ customers }) => {
   const range = 20
-  const data: Array<ICustomer> = React.useMemo(() => customers.slice(0, 20), [])
+  const data: Array<ICustomer> = React.useMemo(
+    () => customers.slice(0, 20),
+    [customers],
+  )
   const columns: Column<ICustomer>[] = React.useMemo(
     () => [
       {
